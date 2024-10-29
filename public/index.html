@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Stock</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Gestión de Stock</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Compras</a></li>
+                <li><a href="#">Ventas</a></li>
+                <li><a href="#">Informes</a></li>
+                <li><a href="#">Alertas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="dashboard">
+            <h2>Panel de Control</h2>
+
+            <!-- Formulario para añadir productos -->
+            <h3>Añadir Producto</h3>
+            <form id="productoForm">
+                <input type="text" id="nombre" placeholder="Nombre del Producto" required>
+                <input type="text" id="descripcion" placeholder="Descripción">
+                <input type="number" id="precio" placeholder="Precio" required>
+                <input type="number" id="cantidad" placeholder="Cantidad en Stock" required>
+                <input type="text" id="categoria" placeholder="Categoría" required>
+                <input type="number" id="costo" placeholder="Costo" required>
+                <input type="text" id="codigoUnico" placeholder="Código Único" required>
+                <button type="submit">Añadir Producto</button>
+            </form>
+
+            <div id="productos">
+                <h3>Lista de Productos</h3>
+                <!-- Aquí se mostrarán los productos -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Sistema de Gestión de Stock</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+```html
+<h3>Registrar Compra</h3>
+<form id="compraForm">
+    <input type="text" id="codigoCompra" placeholder="Código del Producto" required>
+    <input type="number" id="cantidadCompra" placeholder="Cantidad Comprada" required>
+    <button type="submit">Registrar Compra</button>
+</form>
+
+<h3>Registrar Venta</h3>
+<form id="ventaForm">
+    <input type="text" id="codigoVenta" placeholder="Código del Producto" required>
+    <input type="number" id="cantidadVenta" placeholder="Cantidad Vendida" required>
+    <button type="submit">Registrar Venta</button>
+</form>
